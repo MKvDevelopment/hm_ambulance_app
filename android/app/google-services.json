@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "1097061974419",
+    "project_id": "hospital-management-b5cbd",
+    "storage_bucket": "hospital-management-b5cbd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097061974419:android:3fdbe12296b776fe742866",
+        "android_client_info": {
+          "package_name": "com.hm.hm_ambulance_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG0Fym8lP3YLJsdbCSHRAv75UoZ71atpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097061974419:android:fbe71bc40612e52b742866",
+        "android_client_info": {
+          "package_name": "com.project.hm_patient_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG0Fym8lP3YLJsdbCSHRAv75UoZ71atpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097061974419:android:4456f5912c69f8f7742866",
+        "android_client_info": {
+          "package_name": "com.untitle1.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG0Fym8lP3YLJsdbCSHRAv75UoZ71atpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
