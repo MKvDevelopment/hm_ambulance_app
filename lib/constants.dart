@@ -4,7 +4,7 @@ import 'package:form_field_validator/form_field_validator.dart';
 
 const String loginPageImg="assets/images/login.png";
 const String loginPageTitle="Welcome back!";
-const String loginPageDesc="Log in with your data that you Entered during your registration.";
+const String loginPageDesc="Login with your credentials.";
 
 const String registerPageImg="assets/images/signup.png";
 const String registerPageTitle="Create Your Account!";
