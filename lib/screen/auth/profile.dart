@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hm_ambulance_app/common_code/custom_text_style.dart';
-import 'package:hm_ambulance_app/route_constants.dart';
-import 'package:hm_ambulance_app/screen/auth/StudentModel.dart';
+import 'package:IM_Ambulance/common_code/custom_text_style.dart';
+import 'package:IM_Ambulance/route_constants.dart';
+import 'package:IM_Ambulance/screen/auth/StudentModel.dart';
 import 'package:provider/provider.dart';
 
 import '../../provider/AuthProvider.dart';
@@ -79,8 +79,19 @@ class _DriverProfilePageState extends State<DriverProfilePage> {
           appBar: AppBar(
             title:  const Text('My Profile'),
             backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.logout),
+                onPressed: () {
+                 showAlertDialog(context,profileProvider);
+                },
+              ),
+            ],
           ),
-          body: SingleChildScrollView(
+          body: profileProvider.isLoading ? const Center(child: CircularProgressIndicator(color: Colors.red,)) :
+
+
+          SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Form(
@@ -92,6 +103,7 @@ class _DriverProfilePageState extends State<DriverProfilePage> {
                         InkWell(
                           onTap: () {
                             // Add logic for updating profile picture
+                            Navigator.pushNamed(context, changePasswordScreenRoute);
                           },
                           child: CircleAvatar(
                             radius: 50,
@@ -240,6 +252,32 @@ class _DriverProfilePageState extends State<DriverProfilePage> {
               ),
             ),
           ),
+        );
+      },
+    );
+  }
+
+  void showAlertDialog(BuildContext context,AuthProviderr profileProvider) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title:  Text('Logout Confirmation',style: CustomTextStyles.titleLarge,),
+          content:  Text('Are you sure you want to logout?',style: CustomTextStyles.titleMedium,),
+          actions: [
+            TextButton(
+              child:  Text('Cancel',style: CustomTextStyles.titleSmall,),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            TextButton(
+              child: Text('Yes',style: CustomTextStyles.titleSmall,),
+              onPressed: () {
+                profileProvider.signOut(context, logInScreenRoute);
+              },
+            ),
+          ],
         );
       },
     );

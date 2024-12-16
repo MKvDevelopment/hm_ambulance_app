@@ -14,7 +14,7 @@
 
 
     <application
-        android:label="hm_ambulance_app"
+        android:label="IM Ambulance"
         android:name="${applicationName}"
         android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher">

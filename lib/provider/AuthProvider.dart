@@ -32,8 +32,7 @@ class AuthProviderr with ChangeNotifier {
     _auth.authStateChanges().listen(_onAuthStateChanged);
   }
 
-  Future<void> signInWithEmailAndPassword(
-      BuildContext context, String email, String password) async {
+  Future<void> signInWithEmailAndPassword(BuildContext context, String email, String password) async {
     // Close the keyboard
     FocusScope.of(context).unfocus();
     try {
@@ -122,8 +121,7 @@ class AuthProviderr with ChangeNotifier {
   }
 
   // Modify createUserWithEmailAndPassword method
-  Future<void> createUserWithEmailAndPassword(
-      BuildContext context, String email, String password) async {
+  Future<void> createUserWithEmailAndPassword(BuildContext context, String email, String password) async {
     // Close the keyboard
     FocusScope.of(context).unfocus();
     try {
@@ -241,8 +239,7 @@ class AuthProviderr with ChangeNotifier {
   }
 
   // Update data on Firebase
-  Future<void> updateProfile(
-      DriverModel driverModel, BuildContext context) async {
+  Future<void> updateProfile(DriverModel driverModel, BuildContext context) async {
     try {
       await firebaseFirestore
           .collection('driverList')

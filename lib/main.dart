@@ -1,14 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:hm_ambulance_app/provider/AmbulanceProvider.dart';
-import 'package:hm_ambulance_app/provider/AuthProvider.dart';
-import 'package:hm_ambulance_app/route_constants.dart';
-import 'package:hm_ambulance_app/screen/SplashScreen.dart';
-import 'package:hm_ambulance_app/screen/UploadImageScreen.dart';
-import 'package:hm_ambulance_app/screen/ambulance/AmbulanceBookingListPage.dart';
-import 'package:hm_ambulance_app/screen/auth/LoginPage.dart';
-import 'package:hm_ambulance_app/screen/auth/RegisterPage.dart';
-import 'package:hm_ambulance_app/screen/auth/profile.dart';
+import 'package:IM_Ambulance/provider/AmbulanceProvider.dart';
+import 'package:IM_Ambulance/provider/AuthProvider.dart';
+import 'package:IM_Ambulance/route_constants.dart';
+import 'package:IM_Ambulance/screen/SplashScreen.dart';
+import 'package:IM_Ambulance/screen/UploadImageScreen.dart';
+import 'package:IM_Ambulance/screen/ambulance/AmbulanceBookingListPage.dart';
+import 'package:IM_Ambulance/screen/auth/LoginPage.dart';
+import 'package:IM_Ambulance/screen/auth/RegisterPage.dart';
+import 'package:IM_Ambulance/screen/auth/profile.dart';
 import 'package:provider/provider.dart';
 
 import 'common_code/custom_text_style.dart';
